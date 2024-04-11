@@ -1,11 +1,32 @@
 {
   "auth": {
-    "eventmanagementappd6127dbe": {
+    "eventmanagementapp6cdcc7fb": {
       "customAuth": false,
       "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "EMAIL",
+          "FAMILY_NAME",
+          "GIVEN_NAME"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
       "providerPlugin": "awscloudformation",
-      "service": "Cognito",
-      "serviceType": "imported"
+      "service": "Cognito"
     }
   },
   "parameters": {
@@ -38,38 +59,6 @@
         {
           "category": "auth",
           "resourceName": "eventmanagementappbb733d72"
-        }
-      ]
-    },
-    "AMPLIFY_auth_eventmanagementappd6127dbe_nativeClientId": {
-      "usedBy": [
-        {
-          "category": "auth",
-          "resourceName": "eventmanagementappd6127dbe"
-        }
-      ]
-    },
-    "AMPLIFY_auth_eventmanagementappd6127dbe_userPoolId": {
-      "usedBy": [
-        {
-          "category": "auth",
-          "resourceName": "eventmanagementappd6127dbe"
-        }
-      ]
-    },
-    "AMPLIFY_auth_eventmanagementappd6127dbe_userPoolName": {
-      "usedBy": [
-        {
-          "category": "auth",
-          "resourceName": "eventmanagementappd6127dbe"
-        }
-      ]
-    },
-    "AMPLIFY_auth_eventmanagementappd6127dbe_webClientId": {
-      "usedBy": [
-        {
-          "category": "auth",
-          "resourceName": "eventmanagementappd6127dbe"
         }
       ]
     }

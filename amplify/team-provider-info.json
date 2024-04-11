@@ -19,12 +19,7 @@
           "webClientId": "1l191gtfehjim1amsqvu7bqqo5",
           "nativeClientId": "1l191gtfehjim1amsqvu7bqqo5"
         },
-        "eventmanagementappd6127dbe": {
-          "userPoolId": "us-east-1_EsDNkuRyi",
-          "userPoolName": "EventManagementPlatform",
-          "webClientId": "1l191gtfehjim1amsqvu7bqqo5",
-          "nativeClientId": "1l191gtfehjim1amsqvu7bqqo5"
-        }
+        "eventmanagementapp6cdcc7fb": {}
       }
     }
   }
