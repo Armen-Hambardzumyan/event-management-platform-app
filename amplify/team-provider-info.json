@@ -20,6 +20,9 @@
           "nativeClientId": "1l191gtfehjim1amsqvu7bqqo5"
         },
         "eventmanagementapp6cdcc7fb": {}
+      },
+      "api": {
+        "eventmanagementapp": {}
       }
     }
   }
