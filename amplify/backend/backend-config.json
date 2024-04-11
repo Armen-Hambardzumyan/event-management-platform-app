@@ -1,0 +1,77 @@
+{
+  "auth": {
+    "eventmanagementappd6127dbe": {
+      "customAuth": false,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito",
+      "serviceType": "imported"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_auth_eventmanagementappbb733d72_nativeClientId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "eventmanagementappbb733d72"
+        }
+      ]
+    },
+    "AMPLIFY_auth_eventmanagementappbb733d72_userPoolId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "eventmanagementappbb733d72"
+        }
+      ]
+    },
+    "AMPLIFY_auth_eventmanagementappbb733d72_userPoolName": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "eventmanagementappbb733d72"
+        }
+      ]
+    },
+    "AMPLIFY_auth_eventmanagementappbb733d72_webClientId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "eventmanagementappbb733d72"
+        }
+      ]
+    },
+    "AMPLIFY_auth_eventmanagementappd6127dbe_nativeClientId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "eventmanagementappd6127dbe"
+        }
+      ]
+    },
+    "AMPLIFY_auth_eventmanagementappd6127dbe_userPoolId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "eventmanagementappd6127dbe"
+        }
+      ]
+    },
+    "AMPLIFY_auth_eventmanagementappd6127dbe_userPoolName": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "eventmanagementappd6127dbe"
+        }
+      ]
+    },
+    "AMPLIFY_auth_eventmanagementappd6127dbe_webClientId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "eventmanagementappd6127dbe"
+        }
+      ]
+    }
+  }
+}

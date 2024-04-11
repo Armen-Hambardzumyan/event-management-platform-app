@@ -1,0 +1,31 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-eventmanagementapp-dev-8c54c-authRole",
+      "UnauthRoleArn": "arn:aws:iam::533267164613:role/amplify-eventmanagementapp-dev-8c54c-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::533267164613:role/amplify-eventmanagementapp-dev-8c54c-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-eventmanagementapp-dev-8c54c-deployment",
+      "UnauthRoleName": "amplify-eventmanagementapp-dev-8c54c-unauthRole",
+      "StackName": "amplify-eventmanagementapp-dev-8c54c",
+      "StackId": "arn:aws:cloudformation:us-east-1:533267164613:stack/amplify-eventmanagementapp-dev-8c54c/113801e0-f733-11ee-a739-0affea36c2c9",
+      "AmplifyAppId": "d1q6qoiper6frm"
+    },
+    "categories": {
+      "auth": {
+        "eventmanagementappbb733d72": {
+          "userPoolId": "us-east-1_EsDNkuRyi",
+          "userPoolName": "EventManagementPlatform",
+          "webClientId": "1l191gtfehjim1amsqvu7bqqo5",
+          "nativeClientId": "1l191gtfehjim1amsqvu7bqqo5"
+        },
+        "eventmanagementappd6127dbe": {
+          "userPoolId": "us-east-1_EsDNkuRyi",
+          "userPoolName": "EventManagementPlatform",
+          "webClientId": "1l191gtfehjim1amsqvu7bqqo5",
+          "nativeClientId": "1l191gtfehjim1amsqvu7bqqo5"
+        }
+      }
+    }
+  }
+}
