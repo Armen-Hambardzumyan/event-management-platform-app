@@ -4,8 +4,17 @@
     "apiName": "eventmanagementapp",
     "serviceName": "AppSync",
     "defaultAuthType": {
-      "mode": "API_KEY",
-      "expirationTime": 7
-    }
+      "mode": "AMAZON_COGNITO_USER_POOLS",
+      "cognitoUserPoolId": "autheventmanagementapp6cdcc7fb"
+    },
+    "additionalAuthTypes": [
+      {
+        "mode": "API_KEY",
+        "expirationTime": 365,
+        "apiKeyExpirationDate": "2025-04-12T07:48:28.881Z",
+        "keyDescription": "Api"
+      }
+    ],
+    "conflictResolution": {}
   }
 }
