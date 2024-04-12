@@ -20,6 +20,7 @@ import {
 } from "../graphql/mutations";
 import { generateClient } from 'aws-amplify/api';
 import "react-datepicker/dist/react-datepicker.css";
+import './Main.css';
 import Header from "../components/Header/Header";
 import CreateEventForm from "../components/CreateEventForm/CreateEventForm";
 
@@ -100,9 +101,8 @@ const Main = () => {
   return (
     <View className="main-wrapper">
       <Header/>
-
       <Flex justifyContent={"space-between"} alignItems={"flex-start"}>
-        <View margin="3rem">
+        <View width="70%" margin="3rem">
           <Heading margin="1rem 0" color="#808080" level={2}>Current Events</Heading>
           <Input
             margin="1rem 0"
@@ -112,68 +112,68 @@ const Main = () => {
             onChange={handleSearch}
             disabled={!filteredEvents.length}
           />
-
-
           {filteredEvents.length > 0 ?
-            (<Table
-              caption=""
-              highlightOnHover={true}
-              variation="striped">
-              <TableHead>
-                <TableRow>
-                  <TableCell as="th">Event name</TableCell>
-                  <TableCell as="th">Description</TableCell>
-                  <TableCell as="th">Date</TableCell>
-                  <TableCell as="th">Actions</TableCell>
-                </TableRow>
-              </TableHead>
-              <TableBody>
-                {filteredEvents.map((event) => (
-                  <TableRow key={event.id}>
-                    <TableCell>
-                      {editableEventId === event.id ? (
-                        <Input
-                          value={editableEventName}
-                          onChange={(e) => setEditableEventName(e.target.value)}
-                        />
-                      ) : (
-                        <Text>{event.name}</Text>
-                      )}
-                    </TableCell>
-                    <TableCell>
-                      {editableEventId === event.id ? (
-                        <Input
-                          value={editableEventDescription}
-                          onChange={(e) => setEditableEventDescription(e.target.value)}
-                        />
-                      ) : (
-                        <Text>{event.description}</Text>
-                      )}
-                    </TableCell>
-                    <TableCell>
-                      {editableEventId === event.id ? (
-                        <Input
-                          value={editableEventDate}
-                          onChange={(e) => setEditableEventDate(e.target.value)}
-                        />
-                      ) : (
-                        <Text>{event.date}</Text>
-                      )}
-                    </TableCell>
-                    <TableCell>
-                      {editableEventId === event.id ? (
-                        <>
-                          <Button onClick={() => updateEvent(event.id)}>Save</Button>
-                          <Button onClick={() => setEditableEventId('')}>Cancel</Button>
-                        </>
-                      ) : (
-                        <Button onClick={() => handleEdit(event.id, event.name, event.description, event.date)}>Edit</Button>
-                      )}
-                      <Button onClick={() => deleteEvent(event.id)}>Delete</Button>
-                    </TableCell>
-                  </TableRow>))}
-              </TableBody>
-            </Table>) : <Heading marginTop="1rem" level={5}>No Events added yet!</Heading>
+            (
+              <Table
+                caption=""
+                highlightOnHover={true}
+                variation="striped">
+                <TableHead>
+                  <TableRow>
+                    <TableCell as="th">Event name</TableCell>
+                    <TableCell as="th">Description</TableCell>
+                    <TableCell as="th">Date</TableCell>
+                    <TableCell as="th">Actions</TableCell>
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+                  {filteredEvents.map((event) => (
+                    <TableRow key={event.id}>
+                      <TableCell>
+                        {editableEventId === event.id ? (
+                          <Input
+                            value={editableEventName}
+                            onChange={(e) => setEditableEventName(e.target.value)}
+                          />
+                        ) : (
+                          <Text>{event.name}</Text>
+                        )}
+                      </TableCell>
+                      <TableCell>
+                        {editableEventId === event.id ? (
+                          <Input
+                            value={editableEventDescription}
+                            onChange={(e) => setEditableEventDescription(e.target.value)}
+                          />
+                        ) : (
+                          <Text>{event.description}</Text>
+                        )}
+                      </TableCell>
+                      <TableCell>
+                        {editableEventId === event.id ? (
+                          <Input
+                            value={editableEventDate}
+                            onChange={(e) => setEditableEventDate(e.target.value)}
+                          />
+                        ) : (
+                          <Text>{event.date}</Text>
+                        )}
+                      </TableCell>
+                      <TableCell className="action-buttons-wrapper">
+                        {editableEventId === event.id ? (
+                          <>
+                            <Button onClick={() => updateEvent(event.id)}>Save</Button>
+                            <Button onClick={() => setEditableEventId('')}>Cancel</Button>
+                          </>
+                        ) : (
+                          <Button onClick={() => handleEdit(event.id, event.name, event.description, event.date)}>Edit</Button>
+                        )}
+                        <Button onClick={() => deleteEvent(event.id)}>Delete</Button>
+                      </TableCell>
+                    </TableRow>))}
+                </TableBody>
+              </Table>
+            ) : <Heading marginTop="1rem" level={5}>No Events added yet!</Heading>
           }
         </View>
         <CreateEventForm fetchEvents={ fetchEvents } />

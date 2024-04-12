@@ -28,7 +28,7 @@ const CreateEventForm = ({ fetchEvents }) => {
   }
 
   return (
-    <View as="form" margin="2rem" padding="2rem" border="2px solid #252525" borderRadius="10px" onSubmit={createEvent}>
+    <View as="form" margin="9rem 2rem 2rem" padding="2rem" border="2px solid #252525" borderRadius="10px" onSubmit={createEvent}>
       <Flex direction="column" justifyContent="center" >
         <Input
           type="text"

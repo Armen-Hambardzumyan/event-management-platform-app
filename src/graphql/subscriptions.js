@@ -10,7 +10,6 @@ export const onCreateEvent = /* GraphQL */ `
       date
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -24,7 +23,6 @@ export const onUpdateEvent = /* GraphQL */ `
       date
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
@@ -38,7 +36,6 @@ export const onDeleteEvent = /* GraphQL */ `
       date
       createdAt
       updatedAt
-      owner
       __typename
     }
   }
